@@ -23,7 +23,6 @@ public class personal_area extends AppCompatActivity {
             }
         });
 
-        // Add an OnClickListener to the buttonCall
         Button callButton = findViewById(R.id.buttonCall);
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +38,6 @@ public class personal_area extends AppCompatActivity {
     }
 
     private void openPhoneDialer() {
-        // Use ACTION_DIAL to open the dialer
         Intent intent = new Intent(Intent.ACTION_DIAL);
         startActivity(intent);
     }
