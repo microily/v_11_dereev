@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dereev_v_11">
 
     <application
         android:allowBackup="true"
@@ -12,15 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dereev_v_11"
         tools:targetApi="31">
+
         <activity
             android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".personal_area"
+            android:exported="true">
+        </activity>
+
+        <!-- Add the SettingActivity as a separate activity -->
+        <activity
+            android:name=".setting"
+            android:exported="true">
+        </activity>
+    </application>
 </manifest>
